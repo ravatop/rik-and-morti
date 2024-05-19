@@ -1,0 +1,55 @@
+nav{
+    width: 100vw;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    margin-left: 50px;
+}
+.logo-div{
+    width: 30vw;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vw;
+    font-size: 40px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.promo{
+    height: 100vh;
+    background: url('Gravity-Falls-фэндомы-Rick-and-Morty.jpeg');
+    background-size: cover;
+    color: azure;
+    text-align: center;
+    font-size: 60px;
+}
+h1{
+    padding-top: 100px;
+    margin: 0px;
+}
+.cards-contener{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    width: 30%;
+    height: 400px;
+    border: 1px solid  black;
+}
+.card img{
+    width: 100%;
+}
