@@ -29,7 +29,7 @@ nav{
     color: transparent;
 }
 .promo{
-    height: 100vh;
+    height: 110vh;
     background: url('Gravity-Falls-фэндомы-Rick-and-Morty.jpeg');
     background-size: cover;
     color: azure;
@@ -52,4 +52,29 @@ h1{
 }
 .card img{
     width: 100%;
+}
+.business_card{
+    width: 100vw;
+    height:900px ;
+    margin: 0 auto;
+    background: url(https://kartinki.pics/pics/uploads/posts/2022-08/1659507163_1-kartinkin-net-p-rik-i-morti-v-kosmose-art-oboi-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.business_card h3{
+    text-align: center;
+}
+.card-benefit{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card-b img{
+    width: 250px;
+    height:250px;   
+
+}
+.card-b p {
+    text-align: center;
+    font-size: 25px;
 }
