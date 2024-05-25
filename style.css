@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.body{
+    font-family: "Pacifico", cursive;
+    /* font-optical-sizing: auto; */
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 nav{
     width: 100vw;
     height: 150px;
@@ -78,3 +86,285 @@ h1{
     text-align: center;
     font-size: 25px;
 }
+.our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content:center; */
+    width: 90vw;
+    height: 120vh;
+    background-color: cornflowerblue;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 22PX;
+}
+.team-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+.team-card div{
+    width: 33%;
+    margin: 0px;
+    height: 80%;
+
+}
+.team-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    background-color: rgb(24, 27, 30);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 300px;
+}
+.carousel__item {
+    position: relative;
+    height: 35rem;
+    width: 25rem;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1rem 4rem rgba(0,0,0,.5);
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.1);
+    z-index: 0;
+    transition: all .2s linear;
+}
+.carousel__item img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.carousel__item--main {
+    transform: translate(-50%,-50%) scale(1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.carousel__item--left {
+    transform: translate(-110%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--right {
+    transform: translate(10%,-50%) scale(.9);
+    z-index: 1;
+}
+.carousel__item--left img, .carousel__item--right img {
+    filter: grayscale(80%);
+}
+
+.carousel__item--right:hover {
+    transform: translate(10%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--left:hover {
+    transform: translate(-110%,-50%) scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+}
+.carousel__item--main:hover {
+    transform: translate(-50%,-50%) scale(1.2);
+}
+.carousel__item:hover > .carousel__text {
+    opacity: 1;
+}
+.carousel__item:hover img {
+    filter: grayscale(0%);
+}
+
+.carousel__text {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    padding: 2rem 1rem;
+    color: #fff;
+}
+
+
+.carousel__btns {
+    position: absolute;
+    transform: translate(-50%, 22rem);
+    display: flex;
+    gap: 2rem;
+}
+.carousel__btn {
+    background-color: transparent;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border:1px solid currentColor;
+    color: #fff;
+    cursor: pointer;
+}
+.carousel__btn svg {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.carousel__btn:hover {
+    color: #aaa;
+}
+:root {
+    --color-primary: dimgray;
+    --rotation-speed: 1s;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  body {
+    background: linear-gradient(to top, #222, #ddd);
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: 50%;
+    margin-top: 360px;
+  }
+  .image-cube {
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: var(--rotation-speed);  
+  }
+  .image-cube div {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 3px solid white;
+    -webkit-box-reflect: below -3px linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,0.15));
+  }
+  
+  .front {
+    background-image: url('https://i.ytimg.com/vi/y8BPQlaMHTM/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAFOQQWkujc-R4Fp3r6cKYvQTUzhA');
+    transform: translateZ(150px);
+  }
+  .right {
+    background-image: url('https://cdn.kayiprihtim.com/wp-content/uploads/2023/09/Rick-and-Morty-Onlarca-Yil-Devam-Edebilir-The-Simpsons.jpg');
+    transform: rotateY(-270deg) translateX(150px);
+    transform-origin: 100% 0;
+  }
+  .back {
+    background-image: url('https://tm.ibxk.com.br/ms/images/highlights/000/038/531/36929.jpg?ims=750x');
+    transform: translateZ(-150px) rotateY(180deg);
+  }
+  .left {
+    background-image: url('https://www.codigonuevo.com/binrepository/990x639/0c27/990d585/none/2283274/AIQY/rick-and-morty-codigo-nuevo-930x600_CN128120_MG11254299.jpg ');
+    transform: rotateY(270deg) translateX(-150px);
+    transform-origin: 0 50%;
+  }
+  .btns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 405px;
+    pointer-events: none;
+  }
+  .btns button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    background: var(--color-primary);
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.5);
+    pointer-events: all;
+  }
+    
+  .grid-container {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: auto auto auto;
+    margin-top: 200px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+  }
+  
+  .filter-image {
+    text-align: center;
+      width: 30vw;
+      height: 80vh;
+      object-fit: cover;
+      background: white;
+      padding: 10px 10px 35px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: all 0.15s linear;
+      z-index: 0;
+      position: relative;
+      transform: rotate(4deg);
+  }
+  
+  .photo1, photo2 {
+      padding: 1rem;
+      filter: drop-shadow(0 2px 1px darkgrey);
+      display: inline-block;
+  }
+  
+  .photo1 {
+      filter: url(#crumple-effect-1);
+  }
+  
+  .photo2 {
+      filter: url(#crumple-effect-2);
+  }
+  
+  .photo3 {
+      filter: url(#crumple-effect-3);
+  }
+  
+  
+  .photo1:hover, .photo2:hover, .photo3:hover {
+      filter: sepia(50%);
+      transform: rotate(-6deg);
+  }
